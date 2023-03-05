@@ -1,10 +1,23 @@
 tr,td,th{
     border: 1px black solid;
     text-align: center;
+
 }
 table {
 
     border-collapse: collapse;
     border: 1px solid black;
     width: 100%;
-    }
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+    transition:color .2s linear;
+    transition:background-color .2s linear;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
