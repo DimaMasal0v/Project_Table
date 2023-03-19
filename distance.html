@@ -8,34 +8,41 @@
     <title>Project_Table</title>
 </head>
 <body>
+    <header class="header flex justify-center ">
+        <div class="max-w-7xl">
+            <div class="table">
+                <div class="container">           
+                    <h1 class="font-bold uppercase">Результаты соревнований</h1>
+                    <p>Первенство Санкт-Петербурга по гребле-индор</p>
+                    <span>17 Февраля 2023г.</span><br>
+                    <div class = "flex justify-between"><a href="index.html"><span>Дистанция: 2000м </span></a><br>
+                        <a href="distance.html"><span>Дистанция: 4000м</span></a>
+                    </div><br>
+                <div class="border border-solid border-black p-10 rounded-sm">
+                    <div class="p-10 font-mono shadow-xl">
+                        <table class="table_sort">
+                            <thead>
+                                <tr class="font-bold bg-red-100 test-1px font-serif">
+                                    <th>№</th>
+                                    <th>ФИО</th>
+                                    <th>Год Рождения</th>
+                                    <th>Разряд</th>
+                                    <th id = "place">Место</th>
+                                    <th>Время</th>
+                                    <th>Тренер</th>
+                                </tr>
+                            </thead>
     
-    <div class="table">
-        <div class="container">           
-            <h3 class="font-bold">Результаты соревнований</h3>
-            <p>Первенство Санкт-Петербурга по гребле-индор</p>
-            <span>17 Февраля 2023г.</span>
-            <div><a href="index.html"><span>Дистанция: 2000м </span></a><a href="index_date.html"><span>[No Date]</span></a><br>
-                <a href="distance.html"><span>Дистанция: 4000м</span></a><a href="distance_date.html"><span>[No Date]</span></a>
-            </div><br>
-            <table>
-                <thead>
-                    <tr class="font-bold bg-red-500 test-1px">
-                        <th>№</th>
-                        <th>ФИО</th>
-                        <th>Год Рождения</th>
-                        <th>Разряд</th>
-                        <th>Место</th>
-                        <th>Время</th>
-                    </tr>
-                </thead>
-
-                <tbody id="maxdistance">
-
-                </tbody>
-            </table>
-
+                            <tbody id="distance">
+    
+                            </tbody>
+                       </table>
+                </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 <script src="js.js"></script>
 </body>
 </html>

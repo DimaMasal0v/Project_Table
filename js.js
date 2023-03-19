@@ -1,3 +1,10 @@
+
+// document.getElementById("place").ondragover = function(){
+// 	if(<td>${product.Place}</td> == 1){
+// 	getElementById("place").style = ("background-color:gold");
+// 	}
+// }
+
 // Index
 fetch("distance.json")
 .then(function(response){
@@ -15,6 +22,7 @@ fetch("distance.json")
 				<td>${product.Discharge}</td>
 				<td>${product.Place}</td>
 				<td>${product.Time}</td>
+				<td>${product.Coach}</td>
 			</tr>
 		`;
 	}
@@ -39,6 +47,7 @@ fetch("maxdistance.json")
 				<td>${product.Discharge}</td>
 				<td>${product.Place}</td>
 				<td>${product.Time}</td>
+				<td>${product.Coach}</td>
 			</tr>
 		`;
 	}
@@ -46,48 +55,26 @@ fetch("maxdistance.json")
 	placeholder.innerHTML = out;
 });
 
-// Distance date
-fetch("distance_date.json")
-.then(function(respons){
-	return respons.json();
-})
-.then(function(distance_date){
-	let placeholder = document.querySelector("#distance_date");
-	let out = "";
-	for(let product of distance_date){
-		out += `
-			<tr>
-				<td>${product.number} </td>
-				<td>${product.Fio}</td>
-				<td>${product.Discharge}</td>
-				<td>${product.Place}</td>
-				<td>${product.Time}</td>
-			</tr>
-		`;
-	}
 
-	placeholder.innerHTML = out;
-});
+// Sort
+document.addEventListener('DOMContentLoaded', () => {
 
-// Index date
-fetch("index_date.json")
-.then(function(respons){
-	return respons.json();
-})
-.then(function(index_date){
-	let placeholder = document.querySelector("#index_date");
-	let out = "";
-	for(let product of index_date){
-		out += `
-			<tr>
-				<td>${product.number} </td>
-				<td>${product.Fio}</td>
-				<td>${product.Discharge}</td>
-				<td>${product.Place}</td>
-				<td>${product.Time}</td>
-			</tr>
-		`;
-	}
+    const getSort = ({ target }) => {
+        const order = (target.dataset.order = -(target.dataset.order || -1));
+        const index = [...target.parentNode.cells].indexOf(target);
+        const collator = new Intl.Collator(['en', 'ru'], { numeric: true });
+        const comparator = (index, order) => (a, b) => order * collator.compare(
+            a.children[index].innerHTML,
+            b.children[index].innerHTML
+        );
 
-	placeholder.innerHTML = out;
+        for(const tBody of target.closest('table').tBodies)
+            tBody.append(...[...tBody.rows].sort(comparator(index, order)));
+
+        for(const cell of target.parentNode.cells)
+            cell.classList.toggle('sorted', cell === target);
+    };
+
+    document.querySelectorAll('.table_sort thead').forEach(tableTH => tableTH.addEventListener('click', () => getSort(event)));
+
 });
