@@ -1,5 +1,5 @@
-//Select/Index
-fetch('distance.json')
+//Select/Distance
+fetch('maxdistance.json')
 .then(response => response.json())
 .then(data => {
   var table = document.getElementById('table-sort');
@@ -33,8 +33,6 @@ fetch('distance.json')
 	});
   });
 });
-
-
 // Sort
 document.addEventListener('DOMContentLoaded', () => {
 

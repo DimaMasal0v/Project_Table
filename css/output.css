@@ -2303,18 +2303,11 @@ a:hover{
   border-bottom: 1px black solid;
 }
 
-.table_sort tbody tr:nth-child(1) {
-  background: 
-gold
+tbody tr:nth-child(1) {
+  background-color:gold; 
 }
-.table_sort tbody tr:nth-child(2) {
-  background: 
-silver
-}
-.table_sort tbody tr:nth-child(3) {
-  background: 
-  burlywood
-}
+
+
 
 th.sorted[data-order="1"],
 th.sorted[data-order="-1"] {
@@ -2333,4 +2326,13 @@ th.sorted[data-order="-1"]::after {
 
 th.sorted[data-order="1"]::after {
   content: "▲"
+}
+
+select{
+  border: 1px black solid;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 15px 15px #fefefe;
 }

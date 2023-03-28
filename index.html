@@ -15,19 +15,30 @@
                 <h1 class="font-bold uppercase">Результаты соревнований</h1>
                 <p>Первенство Санкт-Петербурга по гребле-индор</p>
                 <span>17 Февраля 2023г.</span><br>
+                    <div class="flex justify-end">
+ 
+                        <select id="coach-select">
+                            <option value="">Все тренеры</option>
+                            <option value="Мерк">Мерк</option>
+                            <option value="Герасимов">Герасимов</option>
+                            <option value="Иванов">Иванов</option>
+                            <option value="Сема">Сема</option>
+                            <option value="Андреев">Андреев</option>
+                          </select>               
+
+                    </div>
                 <div class = "flex justify-between"><a href="index.html"><span>Дистанция: 2000м </span></a><br>
                     <a href="distance.html"><span>Дистанция: 4000м</span></a>
-                </div><br>
-            <div class="border border-solid border-black p-10 rounded-sm">
-                <div class="p-10 font-mono shadow-xl">
-                    <table class="table_sort">
+                </div>
+                <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
+                    <table class="table_sort" id="table-sort">
                         <thead>
                             <tr class="font-bold bg-red-100 test-1px font-serif">
                                 <th>№</th>
                                 <th>ФИО</th>
                                 <th>Год Рождения</th>
                                 <th>Разряд</th>
-                                <th id = "place">Место</th>
+                                <th>Место</th>
                                 <th>Время</th>
                                 <th>Тренер</th>
                             </tr>
@@ -37,8 +48,7 @@
 
                         </tbody>
                    </table>
-            </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </div>
