@@ -1,4 +1,13 @@
 //Select/Distance
+var coachSelect = document.getElementById('coach-select');
+var coachList = ['','Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
+
+coachList.forEach(function(coach) {
+  var option = document.createElement('option');
+  option.textContent = coach;
+  coachSelect.appendChild(option);
+});
+
 fetch('maxdistance.json')
 .then(response => response.json())
 .then(data => {

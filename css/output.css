@@ -2306,7 +2306,9 @@ a:hover{
 tbody tr:nth-child(1) {
   background-color:gold; 
 }
-
+.gold {
+  background-color: gold;
+}
 
 
 th.sorted[data-order="1"],

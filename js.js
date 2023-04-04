@@ -1,4 +1,13 @@
 //Select/Index
+var coachSelect = document.getElementById('coach-select');
+var coachList = ['','Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
+
+coachList.forEach(function(coach) {
+  var option = document.createElement('option');
+  option.textContent = coach;
+  coachSelect.appendChild(option);
+});
+
 fetch('distance.json')
 .then(response => response.json())
 .then(data => {
@@ -17,6 +26,11 @@ fetch('distance.json')
 	`;
 	tbody.appendChild(tr);
   });
+
+  if (row.Place === '1') {
+    row.classList.add('gold');
+  }
+  
   var coachSelect = document.getElementById('coach-select');
 
 
