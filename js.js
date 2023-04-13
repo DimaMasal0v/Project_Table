@@ -1,6 +1,6 @@
 //Select/Index
 var coachSelect = document.getElementById('coach-select');
-var coachList = ['Все тренера:', 'Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
+var coachList = ['Все тренера:','Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
 
 coachList.forEach(function(coach) {
   var option = document.createElement('option');
@@ -9,42 +9,42 @@ coachList.forEach(function(coach) {
 });
 
 fetch('distance.json')
-  .then(response => response.json())
-  .then(data => {
-    var table = document.getElementById('table-sort');
-    var tbody = table.querySelector('tbody');
-    data.forEach(row => {
-      var tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td>${row.number}</td>
-        <td>${row.Fio}</td>
-        <td>${row.Date}</td>
-        <td>${row.Discharge}</td>
-        <td>${row.Place}</td>
-        <td>${row.Time}</td>
-        <td>${row.Coach}</td>
-      `;
-      tbody.appendChild(tr);
+.then(response => response.json())
+.then(data => {
+  var table = document.getElementById('table-sort');
+  var tbody = table.querySelector('tbody');
+  data.forEach(row => {
+    var tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${row.number}</td>
+      <td>${row.Fio}</td>
+      <td>${row.Date}</td>
+      <td>${row.Discharge}</td>
+      <td>${row.Place}</td>
+      <td>${row.Time}</td>
+      <td>${row.Coach}</td>
+    `;
+    if (row.Place === 1) {
+      tr.classList.add('gold');
+    }
+    tbody.appendChild(tr);
+  });
 
-      if (row.Place === '1') {
-        tr.classList.add('gold');
+  var coachSelect = document.getElementById('coach-select');
+
+  coachSelect.addEventListener('change', function() {
+    var selectedCoach = coachSelect.value;
+
+    tbody.querySelectorAll('tr').forEach(row => {
+      if (selectedCoach === '' || row.cells[6].textContent === selectedCoach) {
+        row.classList.remove('hidden');
+      } else {
+        row.classList.add('hidden');
       }
     });
-
-    var coachSelect = document.getElementById('coach-select');
-
-    coachSelect.addEventListener('change', function() {
-      var selectedCoach = coachSelect.value;
-
-      tbody.querySelectorAll('tr').forEach(row => {
-        if (selectedCoach === '' || row.cells[6].textContent === selectedCoach) {
-          row.classList.remove('hidden');
-        } else {
-          row.classList.add('hidden');
-        }
-      });
-    });
   });
+});
+
 
 
 

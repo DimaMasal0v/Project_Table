@@ -2310,7 +2310,7 @@ margin-top: 25px;
 /* tbody tr:nth-child(1) {
   background-color:gold; 
 } */
- .gold {
+tbody td .gold {
   background: gold;
 }
 
