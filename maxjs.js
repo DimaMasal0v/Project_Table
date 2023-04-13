@@ -24,7 +24,10 @@ fetch('maxdistance.json')
 	  <td>${row.Time}</td>
 	  <td>${row.Coach}</td>
 	`;
-	tbody.appendChild(tr);
+  if (row.Place === 1) {
+    tr.classList.add('gold');
+  }
+  tbody.appendChild(tr);
   });
   var coachSelect = document.getElementById('coach-select');
 
