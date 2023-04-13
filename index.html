@@ -5,31 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="style.css">
     <title>Project_Table</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+    data-tag="font"
+    />
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+        data-tag="font"
+    />
 </head>
 <body>
-<header class="header flex justify-center">
-    <div class="max-w-7xl">
+<header class="header">
+    <div class="container">
+        <img
+            alt="IMAGE144"
+            src="img/image144-hz6s-200h.png"
+            class="header-image1"
+        />
+        <div class="header-nav-menu">
+            <div class="header-menu-item">
+            <span class="header-text04"><span>Главная</span></span>
+            </div>
+            <div class="header-menu-item1">
+            <span class="header-text06"><span>Результаты</span></span>
+              <div class="header-menu-content">
+                <a href="index.html"><span>Дистанция: 2000м </span></a>
+                <a href="distance.html"><span>Дистанция: 4000м</span></a>
+              </div>
+            </div>
+            <div class="header-menu-item2">
+            <span class="header-text08"><span>О нас</span></span>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="max-w-7xl flex justify-center">
         <div class="table">
             <div class="container">           
-                <h1 class="font-bold uppercase">Результаты соревнований</h1>
-                <p>Первенство Санкт-Петербурга по гребле-индор</p>
+                <h1 class="font-bold uppercase text-3xl text-center mb-1">Результаты соревнований</h1>
+                <p class="text-center mb-1">Первенство Санкт-Петербурга по гребле-индор</p>
                 <span>17 Февраля 2023г.</span><br>
                     <div class="flex justify-end">
  
                         <select id="coach-select">
-                            <!-- <option value="">Все тренеры</option>
-                            <option value="Мерк">Мерк</option>
-                            <option value="Герасимов">Герасимов</option>
-                            <option value="Иванов">Иванов</option>
-                            <option value="Сема">Сема</option>
-                            <option value="Андреев">Андреев</option> -->
+
                           </select>               
 
                     </div>
-                <div class = "flex justify-between"><a href="index.html"><span>Дистанция: 2000м </span></a><br>
-                    <a href="distance.html"><span>Дистанция: 4000м</span></a>
-                </div>
+
                 <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
                     <table class="table_sort" id="table-sort">
                         <thead>
@@ -52,7 +79,75 @@
             </div>
         </div>
     </div>
-</header>
+<footer class="footer">
+    <div class="dekstop-container1">
+        <span class="dekstop-text BodymdLight">
+          <span>© 2023 Row-Compilition 2000m - 4000m</span>
+        </span>
+        <div class="dekstop-right-section">
+          <div class="dekstop-eyebrow">
+            <span class="dekstop-text02 BodysmtrackingWidestSemiBold">
+              <span>CONNECT</span>
+            </span>
+            <img
+              alt="Line4202"
+              src="img/line4202-25gc.svg"
+              class="dekstop-line"
+            />
+          </div>
+          <div class="dekstop-social-icons">
+            <img
+              alt="RingI420"
+              src="img/ringi420-lmd-200h.png"
+              class="dekstop-ring"
+            />
+            <img
+              alt="SocialiconI420"
+              src="img/socialiconi420-kaek.svg"
+              class="dekstop-socialicon"
+            />
+          </div>
+          <div class="dekstop-social-icons1">
+            <div class="dekstop-socialicon1">
+              <img
+                alt="FrameI420"
+                src="img/framei420-kgr.svg"
+                class="dekstop-frame"
+              />
+            </div>
+            <img
+              alt="RingI420"
+              src="img/ringi420-yrg-200h.png"
+              class="dekstop-ring1"
+            />
+          </div>
+          <div class="dekstop-social-icons2">
+            <img
+              alt="SocialiconI420"
+              src="img/socialiconi420-22hk.svg"
+              class="dekstop-socialicon2"
+            />
+            <img
+              alt="RingI420"
+              src="img/ringi420-tkr9-200h.png"
+              class="dekstop-ring2"
+            />
+          </div>
+          <div class="dekstop-social-icons3">
+            <img
+              alt="SocialiconI420"
+              src="img/socialiconi420-113a.svg"
+              class="dekstop-socialicon3"
+            />
+            <img
+              alt="RingI420"
+              src="img/ringi420-dqd-200h.png"
+              class="dekstop-ring3"
+            />
+          </div>
+        </div>
+      </div>
+</footer>
 <script src="js.js"></script>
 </body>
 </html>

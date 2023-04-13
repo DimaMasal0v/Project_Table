@@ -24,3 +24,330 @@ a:hover{
     background-color: black;
     color: white;
 }
+
+*{
+    box-sizing: border-box;
+}
+
+.gold {
+  background-color: gold;
+}
+
+/* Header */
+
+.header{
+background-color: #999999;
+color: #fff;
+width: 100%;
+height: 110px;
+margin-bottom: 50px;
+}
+
+/* Header IMG */
+.header-image1 {
+    top: 12px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-color: transparent;
+  }
+
+  /* Header Text */
+  .header-nav-menu {
+    top: 45px;
+    left: 1200px;
+    width: 373px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-color: transparent;
+  }
+  .header-menu-item {
+    display: flex;
+    padding: 0 16px;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    margin-right: 16px;
+  }
+  .header-text04 {
+    color: var(--dl-color-neutral-700);
+    height: auto;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Light;
+    text-align: left;
+    font-family: Outfit;
+    font-weight: 300;
+    line-height: 24px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .header-menu-item1 {
+    display: flex;
+    padding: 0 16px;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    margin-right: 16px;
+    display: inline-block;
+  }
+  .header-text06 {
+    color: var(--dl-color-neutral-700);
+    height: auto;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Light;
+    text-align: left;
+    font-family: Outfit;
+    font-weight: 300;
+    line-height: 24px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .header-menu-item2 {
+    display: flex;
+    padding: 0 16px;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+  }
+  .header-text08 {
+    color: var(--dl-color-neutral-700);
+    height: auto;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Light;
+    text-align: left;
+    font-family: Outfit;
+    font-weight: 300;
+    line-height: 24px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+
+/* Header Menu-Text-Content */
+.header-menu-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.header-menu-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.header-menu-content a:hover {background-color: #ddd;}
+
+.header-menu-item1:hover .header-menu-content {display: block;}
+
+.header-menu-item1n:hover .header-text06 {background-color: #3e8e41;}
+
+/* Footer */
+.footer{
+	content: '';
+	position: absolute;
+	left: 0;        
+	width: 100%;
+	height: 2px;
+	background:black; 
+    margin-top: 50px;
+}
+
+.dekstop-container1 {
+    top: 50px;
+    left: 112px;
+    width: 1500px;
+    display: flex;
+    position: absolute;
+    align-self: stretch;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  .dekstop-text {
+    color: var(--dl-color-neutral-700);
+    width: 592px;
+    height: auto;
+    align-self: auto;
+    text-align: left;
+    line-height: 24px;
+  }
+  .dekstop-right-section {
+    width: 592px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-shrink: 0;
+    border-color: transparent;
+    justify-content: flex-end;
+  }
+  .dekstop-eyebrow {
+    display: flex;
+    opacity: 0.70;
+    position: relative;
+    align-items: center;
+    border-color: transparent;
+    margin-right: 24px;
+  }
+  .dekstop-text02 {
+    color: var(--dl-color-neutral-700);
+    height: auto;
+    align-self: auto;
+    text-align: left;
+    line-height: 20px;
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+  .dekstop-line {
+    width: 64px;
+    height: 1px;
+    position: relative;
+  }
+
+  /* Footer Icons */
+  .dekstop-social-icons {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-right: 24px;
+    border-radius: 100px;
+  }
+  .dekstop-ring {
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-round);
+    border-radius: 100px;
+  }
+  .dekstop-socialicon {
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+  .dekstop-social-icons1 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-right: 24px;
+    border-radius: 100px;
+  }
+  .dekstop-socialicon1 {
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .dekstop-frame {
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+  .dekstop-ring1 {
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-round);
+    border-radius: 100px;
+  }
+  .dekstop-social-icons2 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-right: 24px;
+    border-radius: 100px;
+  }
+  .dekstop-socialicon2 {
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+  .dekstop-ring2 {
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-round);
+    border-radius: 100px;
+  }
+  .dekstop-social-icons3 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    border-radius: 100px;
+  }
+  .dekstop-socialicon3 {
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+  }
+  .dekstop-ring3 {
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: var(--dl-radius-radius-round);
+    border-radius: 100px;
+  }

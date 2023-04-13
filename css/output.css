@@ -2288,6 +2288,10 @@ a:hover{
 }
 
 /* Table */
+.table_sort{
+margin-top: 25px;
+}
+
 .table_sort th {
   color:white;
   background:gray;
@@ -2303,11 +2307,11 @@ a:hover{
   border-bottom: 1px black solid;
 }
 
-tbody tr:nth-child(1) {
+/* tbody tr:nth-child(1) {
   background-color:gold; 
-}
-.gold {
-  background-color: gold;
+} */
+ .gold {
+  background: gold;
 }
 
 
@@ -2338,3 +2342,4 @@ select{
   border-radius: 8px;
   box-shadow: 0 15px 15px #fefefe;
 }
+

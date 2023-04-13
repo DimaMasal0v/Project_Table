@@ -1,6 +1,6 @@
 //Select/Distance
 var coachSelect = document.getElementById('coach-select');
-var coachList = ['','Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
+var coachList = ['Все тренеры:','Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
 
 coachList.forEach(function(coach) {
   var option = document.createElement('option');
