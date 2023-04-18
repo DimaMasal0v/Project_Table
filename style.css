@@ -1,16 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-tr,td,th{
-    border: 1px black solid;
+tr{
+    border-top: 1px black solid;
     text-align: center;
 
 }
+
 table {
 
     border-collapse: collapse;
-    border: 1px solid black;
     width: 100%;
+}
+
+.table-main{
+  margin-top: 130px;
+  margin-bottom: 350px;
 }
 
 a{
@@ -20,10 +25,10 @@ a{
     transition:color .2s linear;
     transition:background-color .2s linear;
 }
-a:hover{
+/* a:hover{
     background-color: black;
     color: white;
-}
+} */
 
 *{
     box-sizing: border-box;
@@ -41,11 +46,15 @@ color: #fff;
 width: 100%;
 height: 110px;
 margin-bottom: 50px;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 999;
 }
 
 /* Header IMG */
-.header-image1 {
-    top: 12px;
+  .header-image1 {
+    top: 5px;
     left: 50px;
     width: 100px;
     height: 100px;
@@ -55,7 +64,7 @@ margin-bottom: 50px;
 
   /* Header Text */
   .header-nav-menu {
-    top: 45px;
+    top: 35px;
     left: 1200px;
     width: 373px;
     display: flex;
@@ -156,15 +165,62 @@ margin-bottom: 50px;
 
 .header-menu-item1n:hover .header-text06 {background-color: #3e8e41;}
 
+p{
+  color: #996830;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+}
+p a{
+  color: #996830;
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.footer-contaiber-text{
+  font-size: 45px;
+  font-family:'Times New Roman', Times, serif;
+}
+.footer-contaiber-text-2{
+  font-size: 45px;
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+}
 /* Footer */
 .footer{
-	content: '';
+position: relative;
+top: 180px;
+}
+.container-footer{
+  content: '';
 	position: absolute;
 	left: 0;        
 	width: 100%;
 	height: 2px;
-	background:black; 
-    margin-top: 50px;
+	background:#999999; 
+  margin-top: 180px;
+}
+
+
+.dekstop-container-right {
+  width: 15px;
+}
+
+.dekstop-container{
+  position: absolute;
+  width: 1216px;
+  left: 112px;
+  top: -120px;
+  line-height: 2;
+}
+
+.table::after{
+  content: '';
+	position: absolute;
+	left: 0;        
+	width: 100%;
+	height: 2px;
+	background:#999999; 
+  margin-top: 280px;
 }
 
 .dekstop-container1 {

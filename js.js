@@ -1,9 +1,10 @@
 //Select/Index
 var coachSelect = document.getElementById('coach-select');
-var coachList = ['Все тренера:','Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
+var coachList = ['Все тренера:', 'Мерк', 'Герасимов', 'Иванов', 'Сема', 'Андреев'];
 
 coachList.forEach(function(coach) {
   var option = document.createElement('option');
+  option.value = coach;
   option.textContent = coach;
   coachSelect.appendChild(option);
 });
@@ -30,20 +31,24 @@ fetch('distance.json')
     tbody.appendChild(tr);
   });
 
-  var coachSelect = document.getElementById('coach-select');
-
   coachSelect.addEventListener('change', function() {
     var selectedCoach = coachSelect.value;
 
     tbody.querySelectorAll('tr').forEach(row => {
-      if (selectedCoach === '' || row.cells[6].textContent === selectedCoach) {
+      if (selectedCoach === '' || selectedCoach === 'Все тренера:' || row.cells[6].textContent === selectedCoach) {
         row.classList.remove('hidden');
       } else {
         row.classList.add('hidden');
       }
     });
   });
+  
+  // показываем все ряды таблицы по умолчанию
+  tbody.querySelectorAll('tr').forEach(row => {
+    row.classList.remove('hidden');
+  });
 });
+
 
 
 
