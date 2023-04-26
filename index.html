@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="/path/to/tailwind.css" rel="stylesheet">
     <title>Project_Table</title>
     <link
     rel="stylesheet"
@@ -19,79 +21,100 @@
     />
 </head>
 <body>
-<header class="header bg-gray-600 text-white w-full h-110 mb-50">
+<header class="header bg-gray-600 text-white w-full h-110 mb-50 absolute top-0 left-0 z-50">
     <div class="container">
         <img
             alt="IMAGE144"
             src="img/image144-hz6s-200h.png"
-            class="header-image1"
+            class="header-image1 absolute top-5 left-50 w-100 h-100 border-transparent"
         />
-        <div class="header-nav-menu">
-            <div class="header-menu-item">
-            <span class="header-text04"><span>Главная</span></span>
+        <div class="header-nav-menu top-35 left-1200 w-373 flex absolute items-center border-transparent">
+            <div class="header-menu-item flex items-center relative border-transparent px-16 mr-16">
+            <span class="header-text text-neutral-700 h-auto text-lg self-auto font-light text-left font-outfit font-normal leading-6 tracking-normal mr-0 mb-0 no-underline"><span>Главная</span></span>
             </div>
-            <div class="header-menu-item1">
-            <span class="header-text06"><span>Результаты</span></span>
-              <div class="header-menu-content">
+            <div class="header-menu-item1 flex px-16 mr-16 relative items-center border-transparent inline-block">
+            <span class="header-text text-neutral-700 h-auto text-lg self-auto font-light text-left font-outfit font-normal leading-6 tracking-normal mr-0 mb-0 no-underline"><span>Результаты</span></span>
+              <div class="header-menu-content text-black">
                 <a href="index.html"><span>Дистанция: 2000м </span></a>
                 <a href="distance.html"><span>Дистанция: 4000м</span></a>
               </div>
             </div>
-            <div class="header-menu-item2">
-            <span class="header-text08"><span>О нас</span></span>
+            <div class="header-menu-item2 flex px-16 mr-16 relative items-center border-transparent inline-block">
+            <span class="header-text text-neutral-700 h-auto text-lg self-auto font-light text-left font-outfit font-normal leading-6 tracking-normal mr-0 mb-0 no-underline"><span>О нас</span></span>
             </div>
         </div>
     </div>
 </header>
+<section>
+        <div class="table-main max-w-7xl flex justify-center">
+            <div class="table">
+                <div class="container">           
+                    <h1 class="font-bold uppercase text-3xl text-center mb-1 ">Результаты соревнований</h1>
+                    <p class="text-center mb-1 color-gold">Первенство Санкт-Петербурга по гребле-индор</p>
+                    <span>17 Февраля 2023г.</span><br>
+                        <div class="flex justify-end">
+    
+                            <select id="coach-select">
+                                
+                            </select>               
 
-      <div class="table-main max-w-7xl flex justify-center">
-          <div class="table">
-              <div class="container">           
-                  <h1 class="font-bold uppercase text-3xl text-center mb-1 ">Результаты соревнований</h1>
-                  <p class="text-center mb-1">Первенство Санкт-Петербурга по гребле-индор</p>
-                  <span>17 Февраля 2023г.</span><br>
-                      <div class="flex justify-end">
-  
-                          <select id="coach-select">
+                        </div>
+
+                    <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
+                        <table class="table_sort" id="table-sort">
+                            <thead class="bg-gray-600">
+                                <tr class="font-bold test-1px font-serif">
+                                    <th>№</th>
+                                    <th>ФИО</th>
+                                    <th>Год Рождения</th>
+                                    <th>Разряд</th>
+                                    <th>Место</th>
+                                    <th>Время</th>
+                                    <th>Тренер</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="distance">
                               
-                          </select>               
+                            </tbody>
+                      </table>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    <div>
+  </div>
+</section>
 
-                      </div>
+<section>
+  <div class="select_container bg-gray-600">
+    <div class="container">
+      <p class="select-text text-white">Награды</p>
 
-                  <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
-                      <table class="table_sort" id="table-sort">
-                          <thead>
-                              <tr class="font-bold test-1px font-serif">
-                                  <th>№</th>
-                                  <th>ФИО</th>
-                                  <th>Год Рождения</th>
-                                  <th>Разряд</th>
-                                  <th>Место</th>
-                                  <th>Время</th>
-                                  <th>Тренер</th>
-                              </tr>
-                          </thead>
+    </div>
+  </div>
+</section>
 
-                          <tbody id="distance">
-                            
-                          </tbody>
-                    </table>
-                  <!-- </div> -->
-              </div>
-          </div>
-      </div>
-  <div>
-</div>
+<section class="flex justify-center">
 
-<footer class="footer">
+  <div class="slider">
+    <div class="slide-container">
+      <img src="./img/concept1.png" alt="Image 1" class="slide">
+      <img src="./img/concept2.png" alt="Image 2" class="slide">
+    </div>
+  </div>
+  
+  
+</section>
+<footer class="footer relative top-1000">
 
-  <div class="dekstop-container">
+  <div class="dekstop-container absolute">
     <div class="container flex justify-between">
       <div class="dekstop-container-left">
           <h2 class="footer-contaiber-text">Launch your rowing experience with us!</h2>
-          <span class="footer-contaiber-text-2 underline text-yellow-600">Send us a hi</span>
+          <span class="footer-contaiber-text-2 underline color-gold">Send us a hi</span>
         </div>
-        <div class="dekstop-container-right">
+        <div class="dekstop-container-right w-15">
           <h3 class="text-xl">Russia,Saint-Petersburg</h3>
           <span>Email:</span>
           <p><a href="m3sades@yandex.ru">m3sades@yandex.ru</a></p>
@@ -121,7 +144,7 @@
             <img
               alt="RingI420"
               src="img/ringi420-lmd-200h.png"
-              class="dekstop-ring"
+              class="dekstop-ring absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
             />
             <img
               alt="SocialiconI420"
@@ -129,7 +152,7 @@
               class="dekstop-socialicon"
             />
           </div>
-          <div class="dekstop-social-icons1">
+          <div class="dekstop-social-icons">
             <div class="dekstop-socialicon1">
               <img
                 alt="FrameI420"
@@ -140,10 +163,10 @@
             <img
               alt="RingI420"
               src="img/ringi420-yrg-200h.png"
-              class="dekstop-ring1"
+              class="dekstop-ring1 absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
             />
           </div>
-          <div class="dekstop-social-icons2">
+          <div class="dekstop-social-icons">
             <img
               alt="SocialiconI420"
               src="img/socialiconi420-22hk.svg"
@@ -152,10 +175,10 @@
             <img
               alt="RingI420"
               src="img/ringi420-tkr9-200h.png"
-              class="dekstop-ring2"
+              class="dekstop-ring2 absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
             />
           </div>
-          <div class="dekstop-social-icons3">
+          <div class="dekstop-social-icons">
             <img
               alt="SocialiconI420"
               src="img/socialiconi420-113a.svg"
@@ -164,7 +187,7 @@
             <img
               alt="RingI420"
               src="img/ringi420-dqd-200h.png"
-              class="dekstop-ring3"
+              class="dekstop-ring3 absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
             />
           </div>
         </div>
