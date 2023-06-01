@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="main.css">
-    <link href="/path/to/tailwind.css" rel="stylesheet">
+    <!-- <link href="/path/to/tailwind.css" rel="stylesheet"> -->
     <title>Project_Table</title>
     <link
     rel="stylesheet"
@@ -19,51 +19,52 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
         data-tag="font"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<header class="header bg-gray-600 text-white w-full h-110 mb-50 absolute top-0 left-0 z-50">
+<header class="header bg-gray-400 text-white">
     <div class="container">
         <img
             alt="IMAGE144"
             src="img/image144-hz6s-200h.png"
-            class="header-image1 absolute top-5 left-50 w-100 h-100 border-transparent"
+            class="header-image1"
         />
-        <div class="header-nav-menu top-35 left-1200 w-373 flex absolute items-center border-transparent">
-            <div class="header-menu-item flex items-center relative border-transparent px-16 mr-16">
-            <span class="header-text text-neutral-700 h-auto text-lg self-auto font-light text-left font-outfit font-normal leading-6 tracking-normal mr-0 mb-0 no-underline"><span>Главная</span></span>
+        <div class="header-nav-menu">
+            <div class="header-menu-item">
+            <span class="header-text text-white"><span>Главная</span></span>
             </div>
-            <div class="header-menu-item1 flex px-16 mr-16 relative items-center border-transparent inline-block">
-            <span class="header-text text-neutral-700 h-auto text-lg self-auto font-light text-left font-outfit font-normal leading-6 tracking-normal mr-0 mb-0 no-underline"><span>Результаты</span></span>
+            <div class="header-menu-item1">
+            <span class="header-text text-white"><span>Результаты</span></span>
               <div class="header-menu-content text-black">
                 <a href="index.html"><span>Дистанция: 2000м </span></a>
                 <a href="distance.html"><span>Дистанция: 4000м</span></a>
               </div>
             </div>
-            <div class="header-menu-item2 flex px-16 mr-16 relative items-center border-transparent inline-block">
-            <span class="header-text text-neutral-700 h-auto text-lg self-auto font-light text-left font-outfit font-normal leading-6 tracking-normal mr-0 mb-0 no-underline"><span>О нас</span></span>
+            <div class="header-menu-item2">
+            <span class="header-text text-white"><span>О нас</span></span>
             </div>
         </div>
     </div>
 </header>
 <section>
-        <div class="table-main max-w-7xl flex justify-center">
+        <div class="table-main flex justify-center">
             <div class="table">
                 <div class="container">           
-                    <h1 class="font-bold uppercase text-3xl text-center mb-1 ">Результаты соревнований</h1>
+                    <h1 class="font-bold uppercase text-3xl text-center mb-1">Результаты соревнований</h1>
                     <p class="text-center mb-1 color-gold">Первенство Санкт-Петербурга по гребле-индор</p>
                     <span>17 Февраля 2023г.</span><br>
                         <div class="flex justify-end">
     
-                            <select id="coach-select">
+                            <select class="" id="coach-select">
                                 
                             </select>               
 
                         </div>
 
                     <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
-                        <table class="table_sort" id="table-sort">
-                            <thead class="bg-gray-600">
-                                <tr class="font-bold test-1px font-serif">
+                        <table class="table_sort lg:inline-block" id="table-sort">
+                            <thead class="bg-gray-400">
+                                <tr class="">
                                     <th>№</th>
                                     <th>ФИО</th>
                                     <th>Год Рождения</th>
@@ -87,25 +88,122 @@
 </section>
 
 <section>
-  <div class="select_container bg-gray-600">
+  <div class="select_container bg-gray-400">
     <div class="container">
+    <div>
       <p class="select-text text-white">Награды</p>
-
+    </div>
+    <div class="svg flex justify-center absolute right-20 mt-20">
+    <div class="select_container-svg-1 mr-16 flex justify-start">
+      <img class = "w-20 h-20 mr-3" src="./svg/german-design-award.svg" alt="">
+      <span class="text-sm font-normal text-white mt-5">German Design Awardbr <br>
+        2021</span>
+    </div>
+    <div class="select_container-svg-2 mr-16 flex justify-start">
+      <img class = "w-20 h-20 mr-3" src="./svg/a-design-award.svg" alt="">
+      <span class="text-sm font-normal text-white mt-5">Gold A’ Design Award <br>
+        2021</span>
+    </div>
+    <div class="select_container-svg-3 mr-16 flex justify-start">
+      <img class = "w-20 h-20 mr-3" src="./svg/if-design-award.svg" alt="">
+      <span class="text-sm font-normal text-white mt-5">IF Design Award <br>
+        2020</span>
+    </div>
+    <div class="select_container-svg-4 mr-16 flex justify-start">
+      <img class = "w-20 h-20 mr-3" src="./svg/good-design-award.svg" alt="">
+      <span class="text-sm font-normal text-white mt-5">Good Design Award <br>
+        2019</span>
+    </div>
+  </div>
     </div>
   </div>
 </section>
 
-<section class="flex justify-center">
+<!-- <section>
+  <div class="container mb-20 flex justify-center">
+    <div class="slider block">
+      <div class="slide-container">
+        <img src="./img/concept1.png" alt="Image 1" class="">
+        <img src="./img/concept2.png" alt="Image 2" class="slide">
+      </div>
+    </div>
+  </div> 
+</section> -->
 
-  <div class="slider">
-    <div class="slide-container">
-      <img src="./img/concept1.png" alt="Image 1" class="slide">
-      <img src="./img/concept2.png" alt="Image 2" class="slide">
+<!-- Line -->
+<div class="container_two-line"></div>
+
+<section class="container_two flex justify-center">
+  <div class="container relative flex top-55">
+    <div class="container_two-text">
+      <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">about us</h5>
+      <h6 class="text-6xl font-normal">We help to bring your dream home to reality</h6>
+      <span class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Optio ipsam atque cupiditate temporibus corporis vitae, laborum   laboriosam laudantium iure eius nisi, doloremque labore necessitatibus  asperiores ducimus deserunt numquam repellat ex.</span>
+    </div>
+    <div class="container_two-img flex justify-between">
+      <img src="./img/Image.svg" alt="">
+      <img class="ml-7 mt-16" src="./img/Image (1).svg" alt="">
     </div>
   </div>
-  
-  
 </section>
+<!-- Number -->
+<div class="number_block mt-16 flex justify-center">
+  <span class="text-6xl pr-3">100%</span><span class="text-sm pr-16 pt-2">SATISFITATION <br> CLIENTS</span>
+  <span class="text-6xl pr-3">250</span><span class="text-sm pr-16 pt-2">EMPLOYEES ON <br> WORLDWIDE</span>
+  <span class="text-6xl pr-3">3469</span><span class="text-sm pr-16 pt-2">PROJECTS COMPLETED <br> ON 60 COUNTRIES</span>
+</div>
+
+<!-- CT BLOCK -->
+<section class="container_three flex justify-center mt-64 ml-28">
+  <div class="container relative flex top-55">
+    <div class="container_two-text">
+      <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">OUR SERVICES</h5>
+      <h6 class="text-6xl font-normal">We provide the best solutions for your dream home</h6>
+    </div>
+</section>
+
+<div class="flex justify-center">
+  <div class="one">
+    <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
+    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Architectural & Interior design</h2>
+    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+  </div>
+  <div class="two">
+    <img class = "pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="">
+    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Building Renovation</h2>
+    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+
+  </div>
+  <div class="three">
+    <img class = "pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="">
+    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Construciton Management</h2>
+    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+
+  </div>
+</div>
+
+<!-- CF BLOCK -->
+<section class="container_four flex justify-center mt-64 ml-28">
+  <div class="container relative flex top-55">
+    <div class="container_two-text mr-24">
+      <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">RECENT WORKS</h5>
+      <h6 class="text-6xl font-normal">Some of our crafts made with love</h6>
+      <img src="./img/Image (3).svg" alt="">
+      <h4 class="text-4xl font-normal mt-6">Villa Furnishing & Interior</h4>
+      <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.</span><br>
+      <button class="button-contact mt-24 text-sm"><a href="#">CONTACT US</a></button>
+    </div>
+    <div>
+      <img src="./img/Image (2).svg" alt="">
+      <h4 class="text-4xl font-normal">Luxury Hotel Renovation</h4>
+      <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
+      <img class = "mt-20" src="./img/Image (4).svg" alt="">
+      <h4 class="text-4xl font-normal ">Residence Swimming Pool</h4>
+      <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer relative top-1000">
 
   <div class="dekstop-container absolute">
@@ -144,7 +242,7 @@
             <img
               alt="RingI420"
               src="img/ringi420-lmd-200h.png"
-              class="dekstop-ring absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
+              class="dekstop-ring"
             />
             <img
               alt="SocialiconI420"
@@ -163,7 +261,7 @@
             <img
               alt="RingI420"
               src="img/ringi420-yrg-200h.png"
-              class="dekstop-ring1 absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
+              class="dekstop-ring1"
             />
           </div>
           <div class="dekstop-social-icons">
@@ -175,7 +273,7 @@
             <img
               alt="RingI420"
               src="img/ringi420-tkr9-200h.png"
-              class="dekstop-ring2 absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
+              class="dekstop-ring2"
             />
           </div>
           <div class="dekstop-social-icons">
@@ -187,7 +285,7 @@
             <img
               alt="RingI420"
               src="img/ringi420-dqd-200h.png"
-              class="dekstop-ring3 absolute top-0 left-0 w-40 h-40 border-2 border-black rounded-full"
+              class="dekstop-ring3"
             />
           </div>
         </div>
