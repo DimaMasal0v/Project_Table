@@ -22,16 +22,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<header class="header bg-gray-400 text-white">
-    <div class="container">
+<header class="header bg-gray-400 text-white xl:right-96">
+    <div class="container xl:max-w-xs">
         <img
             alt="IMAGE144"
             src="img/image144-hz6s-200h.png"
             class="header-image1"
         />
         <div class="header-nav-menu">
-            <div class="header-menu-item">
-            <span class="header-text text-white"><span>Главная</span></span>
+            <div class="header-menu-item xl:absolute left-36">
+            <span class="header-text text-white xl:hidden"><span>Главная</span></span>
             </div>
             <div class="header-menu-item1">
             <span class="header-text text-white"><span>Результаты</span></span>
@@ -55,14 +55,14 @@
                     <span>17 Февраля 2023г.</span><br>
                         <div class="flex justify-end">
     
-                            <select class="" id="coach-select">
+                            <select class="xl:grid w-24" id="coach-select">
                                 
                             </select>               
 
                         </div>
 
                     <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
-                        <table class="table_sort lg:inline-block" id="table-sort">
+                        <table class="table_sort xl:grid text-xs table-auto" id="table-sort">
                             <thead class="bg-gray-400">
                                 <tr class="">
                                     <th>№</th>
@@ -88,7 +88,7 @@
 </section>
 
 <section>
-  <div class="select_container bg-gray-400">
+  <div class="select_container bg-gray-400 xl:h-80 pb-96">
     <div class="container">
     <div>
       <p class="select-text text-white">Награды</p>
@@ -142,7 +142,7 @@
     </div>
     <div class="container_two-img flex justify-between">
       <img src="./img/Image.svg" alt="">
-      <img class="ml-7 mt-16" src="./img/Image (1).svg" alt="">
+      <img class="ml-7 mt-15" src="./img/Image (1).svg" alt="">
     </div>
   </div>
 </section>
@@ -163,7 +163,7 @@
 </section>
 
 <div class="flex justify-center">
-  <div class="one">
+  <div class="one xl:grid grid-flow-col">
     <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
     <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Architectural & Interior design</h2>
     <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
