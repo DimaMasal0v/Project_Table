@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="index.php">Запись на соревнования</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h2>Регистрация нового пользователя</h2>
+        <form method="post" action="register-user.php">
+            <div class="form-group">
+                <label>Имя пользователя</label>
+                <input type="text" name="username" required>
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+        <div class="form-group">
+            <span>Уже есть аккаунт? <a href="login.html">Войти</a></span>
+        </div>
+    </div>
+</body>
+</html>
