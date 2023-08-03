@@ -21,8 +21,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header class="header bg-gray-400 text-white xl:right-96">
+<body class="static overflow-x-hidden max-2xl:w-full min-h-screen flex flex-col">
+<header class="header bg-gray-400 text-white xl:min-w-xs">
     <div class="container xl:max-w-xs">
         <img
             alt="IMAGE144"
@@ -48,9 +48,9 @@
 </header>
 <section>
         <div class="table-main flex justify-center">
-            <div class="table">
+            <div class="table"> <!-- 2xl:text-xl -->
                 <div class="container">           
-                    <h1 class="font-bold uppercase text-3xl text-center mb-1">Результаты соревнований</h1>
+                    <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min">Результаты соревнований</h1>
                     <p class="text-center mb-1 color-gold">Первенство Санкт-Петербурга по гребле-индор</p>
                     <span>17 Февраля 2023г.</span><br>
                         <div class="flex justify-end">
@@ -62,9 +62,9 @@
                         </div>
 
                     <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
-                        <table class="table_sort xl:grid text-xs table-auto" id="table-sort">
+                        <table class="table_sort xl:grid table-auto flex flex-row flex-no-wrap xl:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 xl:p-16" id="table-sort">
                             <thead class="bg-gray-400">
-                                <tr class="">
+                                <tr class="flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
                                     <th>№</th>
                                     <th>ФИО</th>
                                     <th>Год Рождения</th>
@@ -88,15 +88,15 @@
 </section>
 
 <section>
-  <div class="select_container bg-gray-400 xl:h-80 pb-96">
+  <div class="select_container bg-gray-400 h-60 w-full">
     <div class="container">
     <div>
-      <p class="select-text text-white">Награды</p>
+      <p class="select-text text-white flex bottom-10 top-4 left-20">Награды</p>
     </div>
-    <div class="svg flex justify-center absolute right-20 mt-20">
+    <div class="svg flex justify-center absolute right-64 mt-20">
     <div class="select_container-svg-1 mr-16 flex justify-start">
-      <img class = "w-20 h-20 mr-3" src="./svg/german-design-award.svg" alt="">
-      <span class="text-sm font-normal text-white mt-5">German Design Awardbr <br>
+      <img class = "w-25 h-25 mr-3" src="./svg/german-design-award.svg" alt="">
+      <span class="text-base font-normal text-white mt-5">German Design Awardbr <br>
         2021</span>
     </div>
     <div class="select_container-svg-2 mr-16 flex justify-start">
@@ -133,7 +133,7 @@
 <!-- Line -->
 <div class="container_two-line"></div>
 
-<section class="container_two flex justify-center">
+<section class="container_two flex justify-center mt-20">
   <div class="container relative flex top-55">
     <div class="container_two-text">
       <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">about us</h5>
@@ -162,8 +162,8 @@
     </div>
 </section>
 
-<div class="flex justify-center">
-  <div class="one xl:grid grid-flow-col">
+<div class="flex justify-center xl:grid grid-flow-col">  <!--xl:flex-no-wrap flex-col-->
+  <div class="one">
     <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
     <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Architectural & Interior design</h2>
     <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
@@ -227,7 +227,7 @@
         <span class="dekstop-text BodymdLight">
           <span>© 2023 Row-Compilition 2000m - 4000m</span>
         </span>
-        <div class="dekstop-right-section">
+        <div class="dekstop-right-section flex right-32">
           <div class="dekstop-eyebrow">
             <span class="dekstop-text02 BodysmtrackingWidestSemiBold">
               <span>CONNECT</span>
