@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="relative">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/output.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="main.css">
@@ -21,17 +21,17 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<header class="header bg-gray-400 text-white">
-    <div class="container">
+<body class="absolute xl:static overflow-x-hidden max-w-full min-w-0 max-h-96 xl:overflow-x-hidden">
+<header class="header bg-gray-400 text-white absolute xl:w-full">
+    <div class="container xl:max-w-xs">
         <img
             alt="IMAGE144"
             src="img/image144-hz6s-200h.png"
             class="header-image1"
         />
-        <div class="header-nav-menu">
-            <div class="header-menu-item">
-            <span class="header-text text-white"><span>Главная</span></span>
+        <div class="header-nav-menu absolute">
+            <div class="header-menu-item xl:max-xl:text-xs">
+            <span class="header-text text-white xl:hidden"><span>Главная</span></span>
             </div>
             <div class="header-menu-item1">
             <span class="header-text text-white"><span>Результаты</span></span>
@@ -47,24 +47,24 @@
     </div>
 </header>
 <section>
-        <div class="table-main flex justify-center">
-            <div class="table">
+        <div class="table-main flex justify-center relative">
+            <div class="table"> <!-- 2xl:text-xl -->
                 <div class="container">           
-                    <h1 class="font-bold uppercase text-3xl text-center mb-1">Результаты соревнований</h1>
+                    <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min">Результаты соревнований</h1>
                     <p class="text-center mb-1 color-gold">Первенство Санкт-Петербурга по гребле-индор</p>
                     <span>17 Февраля 2023г.</span><br>
                         <div class="flex justify-end">
     
-                            <select class="" id="coach-select">
+                            <select class="xl:grid w-24" id="coach-select">
                                 
                             </select>               
 
                         </div>
 
                     <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
-                        <table class="table_sort lg:inline-block" id="table-sort">
+                        <table class="table_sort xl:grid table-auto flex flex-row flex-no-wrap xl:bg-white rounded-lg overflow-hidden sm:shadow-lg" id="table-sort">
                             <thead class="bg-gray-400">
-                                <tr class="">
+                                <tr class="flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
                                     <th>№</th>
                                     <th>ФИО</th>
                                     <th>Год Рождения</th>
@@ -75,8 +75,8 @@
                                 </tr>
                             </thead>
 
-                            <tbody id="distance">
-                              
+                            <tbody class="flex-1 sm:flex-none" id="distance">
+
                             </tbody>
                       </table>
                     <!-- </div> -->
@@ -88,15 +88,15 @@
 </section>
 
 <section>
-  <div class="select_container bg-gray-400">
-    <div class="container">
+  <div class="select_container bg-gray-400 w-full min-w-0 max-w-full min-h-0 max-h-60 xl:max-w-32 absolutes">
+    <div class="container h-60">
     <div>
-      <p class="select-text text-white">Награды</p>
+      <p class="select-text text-white flex bottom-10 top-4 left-20">Награды</p>
     </div>
-    <div class="svg flex justify-center absolute right-20 mt-20">
+    <div class="svg flex justify-center absolute right-64 mt-20">
     <div class="select_container-svg-1 mr-16 flex justify-start">
-      <img class = "w-20 h-20 mr-3" src="./svg/german-design-award.svg" alt="">
-      <span class="text-sm font-normal text-white mt-5">German Design Awardbr <br>
+      <img class = "w-25 h-25 mr-3" src="./svg/german-design-award.svg" alt="">
+      <span class="text-base font-normal text-white mt-5">German Design Awardbr <br>
         2021</span>
     </div>
     <div class="select_container-svg-2 mr-16 flex justify-start">
@@ -131,9 +131,9 @@
 </section> -->
 
 <!-- Line -->
-<div class="container_two-line"></div>
+<!-- <div class="container_two-line"></div> -->
 
-<section class="container_two flex justify-center">
+<!-- <section class="container_two flex justify-center mt-20">
   <div class="container relative flex top-55">
     <div class="container_two-text">
       <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">about us</h5>
@@ -142,48 +142,48 @@
     </div>
     <div class="container_two-img flex justify-between">
       <img src="./img/Image.svg" alt="">
-      <img class="ml-7 mt-16" src="./img/Image (1).svg" alt="">
+      <img class="ml-7 mt-15" src="./img/Image (1).svg" alt="">
     </div>
   </div>
-</section>
+</section> -->
 <!-- Number -->
-<div class="number_block mt-16 flex justify-center">
+<!-- <div class="number_block mt-16 flex justify-center">
   <span class="text-6xl pr-3">100%</span><span class="text-sm pr-16 pt-2">SATISFITATION <br> CLIENTS</span>
   <span class="text-6xl pr-3">250</span><span class="text-sm pr-16 pt-2">EMPLOYEES ON <br> WORLDWIDE</span>
   <span class="text-6xl pr-3">3469</span><span class="text-sm pr-16 pt-2">PROJECTS COMPLETED <br> ON 60 COUNTRIES</span>
-</div>
+</div> -->
 
 <!-- CT BLOCK -->
-<section class="container_three flex justify-center mt-64 ml-28">
+<!-- <section class="container_three flex justify-center mt-64 ml-28">
   <div class="container relative flex top-55">
     <div class="container_two-text">
       <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">OUR SERVICES</h5>
       <h6 class="text-6xl font-normal">We provide the best solutions for your dream home</h6>
     </div>
-</section>
+</section> -->
 
-<div class="flex justify-center">
-  <div class="one">
+<div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 max-h-full xl:flex-no-wrap ml-3 flex-col ">  <!--xl:flex-no-wrap flex-col-->
+  <div class="one mb-5 xl:w-72:h-80">
     <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
-    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Architectural & Interior design</h2>
-    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+    <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Architectural & Interior design</h2>
+    <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
   </div>
-  <div class="two">
+  <div class="two mb-5">
     <img class = "pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="">
-    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Building Renovation</h2>
-    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+    <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Building Renovation</h2>
+    <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
 
   </div>
-  <div class="three">
+  <div class="three mb-5">
     <img class = "pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="">
-    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Construciton Management</h2>
-    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+    <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Construciton Management</h2>
+    <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
 
   </div>
 </div>
 
 <!-- CF BLOCK -->
-<section class="container_four flex justify-center mt-64 ml-28">
+<!-- <section class="container_four flex justify-center mt-64 ml-28">
   <div class="container relative flex top-55">
     <div class="container_two-text mr-24">
       <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">RECENT WORKS</h5>
@@ -201,18 +201,21 @@
       <h4 class="text-4xl font-normal ">Residence Swimming Pool</h4>
       <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
     </div>
-</section>
+</section> -->
+
+<!-- Line -->
+<div class="container_two-line static"></div>
 
 <!-- FOOTER -->
-<footer class="footer relative top-1000">
+<footer class="footer">
 
   <div class="dekstop-container absolute">
     <div class="container flex justify-between">
-      <div class="dekstop-container-left">
+      <div class="dekstop-container-left xl:max-w-sm">
           <h2 class="footer-contaiber-text">Launch your rowing experience with us!</h2>
           <span class="footer-contaiber-text-2 underline color-gold">Send us a hi</span>
         </div>
-        <div class="dekstop-container-right w-15">
+        <div class="dekstop-container-right w-15 flex-col">
           <h3 class="text-xl">Russia,Saint-Petersburg</h3>
           <span>Email:</span>
           <p><a href="m3sades@yandex.ru">m3sades@yandex.ru</a></p>
@@ -227,7 +230,7 @@
         <span class="dekstop-text BodymdLight">
           <span>© 2023 Row-Compilition 2000m - 4000m</span>
         </span>
-        <div class="dekstop-right-section">
+        <div class="dekstop-right-section flex right-32">
           <div class="dekstop-eyebrow">
             <span class="dekstop-text02 BodysmtrackingWidestSemiBold">
               <span>CONNECT</span>

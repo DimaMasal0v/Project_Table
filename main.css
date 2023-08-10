@@ -40,7 +40,7 @@ background-color: gold;
 .header{
 background-color: #999999;
 color: #fff;
-width: 100%;
+width: 100vw;
 height: 110px;
 margin-bottom: 50px;
 position: absolute;
@@ -157,7 +157,7 @@ font-style: italic;
 /* Footer */
 .footer{
 position: relative;
-top: 500px;
+top: 300px;
 }
 .container-footer{
 content: '';
@@ -170,32 +170,54 @@ margin-top: 180px;
 }
 
 
+.dekstop-container-left {
+width: 50%;
+
+height: auto;
+align-self: auto;
+text-align: left;
+line-height: 40px;
+}
 .dekstop-container-right {
-width: 15px;
+width: 50%;
+
+display: flex;
+position: relative;
+flex-shrink: 0;
+border-color: transparent;
+text-align: right;
 }
 
 .dekstop-container{
 position: absolute;
-width: 1216px;
+width:100%;
 left: 112px;
 top: -120px;
 line-height: 2;
+
+justify-content: space-between;
+display: flex;
+align-self: stretch;
+align-items: center;
+flex-shrink: 0;
+border-color: transparent;
+padding-bottom: 50px;
 }
 
-.table::after{
+/* .table::after{
 content: '';
 position: absolute;
 left: 0;        
 width: 100%;
 height: 2px;
 background:#999999; 
-margin-top: 3890px;
-}
+margin-top: 3700px;
+} */
 
 .dekstop-container1 {
 top: 50px;
 left: 112px;
-width: 1500px;
+width: 100%;
 display: flex;
 position: absolute;
 align-self: stretch;
@@ -207,14 +229,14 @@ padding-bottom: 50px;
 }
 .dekstop-text {
 color: var(--dl-color-neutral-700);
-width: 592px;
+width: 50%;
 height: auto;
 align-self: auto;
 text-align: left;
 line-height: 24px;
 }
 .dekstop-right-section {
-width: 592px;
+width: 50%;
 display: flex;
 position: relative;
 align-items: center;
@@ -375,17 +397,17 @@ border-top: 1px black solid;
 border-bottom: 1px black solid;
 }
 
-tbody td .gold {
+/* tbody td .gold {
 background: gold;
-}
+} */
 
 
-th.sorted[data-order="1"],
+/* th.sorted[data-order="1"],
 th.sorted[data-order="-1"] {
 position: relative;
-}
+} */
 
-th.sorted[data-order="1"]::after,
+/* th.sorted[data-order="1"]::after,
 th.sorted[data-order="-1"]::after {
 right: 8px;
 position: absolute;
@@ -397,7 +419,7 @@ content: "▼"
 
 th.sorted[data-order="1"]::after {
 content: "▲"
-}
+} */
 
 select{
 display: block; 
