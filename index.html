@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="relative">
+<<<<<<< HEAD
+<html lang="en" class="relative h-full">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+>>>>>>> 294e84a (Add files via upload)
     <link rel="stylesheet" href="./css/output.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="main.css">
@@ -21,17 +29,27 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="absolute xl:static overflow-x-hidden max-w-full min-w-0 max-h-96 xl:overflow-x-hidden">
+<<<<<<< HEAD
+<body class="w-full absolute xl:static overflow-x-hidden max-w-full min-w-0 max-h-96 xl:overflow-x-hidden h-full">
 <header class="header bg-gray-400 text-white absolute xl:w-full">
+=======
+<body class="static overflow-x-hidden max-2xl:w-full min-h-screen flex flex-col">
+<header class="header bg-gray-400 text-white xl:min-w-xs">
+>>>>>>> 294e84a (Add files via upload)
     <div class="container xl:max-w-xs">
         <img
             alt="IMAGE144"
             src="img/image144-hz6s-200h.png"
             class="header-image1"
         />
-        <div class="header-nav-menu absolute">
+        <div class="header-nav-menu">
+<<<<<<< HEAD
             <div class="header-menu-item xl:max-xl:text-xs">
+            <span class="header-text text-white"><span>Главная</span></span>
+=======
+            <div class="header-menu-item xl:absolute left-36">
             <span class="header-text text-white xl:hidden"><span>Главная</span></span>
+>>>>>>> 294e84a (Add files via upload)
             </div>
             <div class="header-menu-item1">
             <span class="header-text text-white"><span>Результаты</span></span>
@@ -47,7 +65,11 @@
     </div>
 </header>
 <section>
+<<<<<<< HEAD
         <div class="table-main flex justify-center relative">
+=======
+        <div class="table-main flex justify-center">
+>>>>>>> 294e84a (Add files via upload)
             <div class="table"> <!-- 2xl:text-xl -->
                 <div class="container">           
                     <h1 class="font-bold uppercase text-3xl text-center mb-1 min-w-min">Результаты соревнований</h1>
@@ -55,6 +77,16 @@
                     <span>17 Февраля 2023г.</span><br>
                         <div class="flex justify-end">
     
+<<<<<<< HEAD
+                            <select class="xl:grid w-28 border-black border-solid border-1" id="coach-select">
+                                
+                            </select>               
+                            <button class="p-5 bg-gray-300 mr-5">Сортировка</button>
+                        </div>
+                  <!-- Table 1 -->
+                    <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
+                        <!-- <table class="table_sort xl:grid table-auto flex flex-row flex-no-wrap xl:bg-white rounded-lg overflow-hidden sm:shadow-lg" id="table-sort">
+=======
                             <select class="xl:grid w-24" id="coach-select">
                                 
                             </select>               
@@ -62,7 +94,8 @@
                         </div>
 
                     <!-- <div class="border border-solid border-black p-10 rounded-sm"> -->
-                        <table class="table_sort xl:grid table-auto flex flex-row flex-no-wrap xl:bg-white rounded-lg overflow-hidden sm:shadow-lg" id="table-sort">
+                        <table class="table_sort xl:grid table-auto flex flex-row flex-no-wrap xl:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 xl:p-16" id="table-sort">
+>>>>>>> 294e84a (Add files via upload)
                             <thead class="bg-gray-400">
                                 <tr class="flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
                                     <th>№</th>
@@ -75,25 +108,197 @@
                                 </tr>
                             </thead>
 
+<<<<<<< HEAD
                             <tbody class="flex-1 sm:flex-none" id="distance">
 
                             </tbody>
+                      </table> -->
+                    <!-- </div> -->
+
+                  <!-- Table 2 -->
+                  <table class="w-full flex flex-row flex-no-wrap sm:bg-white rounded-lg overflow-hidden sm:shadow-lg my-5 text-center">
+                    <thead class="text-white">
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-5 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+                      <tr class="bg-gray-400 flex flex-col flex-no wrap sm:table-row rounded-l-lg sm:rounded-none mb-2 sm:mb-0">
+                        <th class="p-3 text-left">№</th>
+                        <th class="p-3 text-left">ФИО</th>
+                        <th class="p-3 text-left">Дата</th>
+                        <th class="p-3 text-left">Разряд</th>
+                        <th class="p-3 text-left">Место</th>
+                        <th class="p-3 text-left">Время</th>
+                        <th class="p-3 text-left">Тренер</th>
+                      </tr>
+
+                    </thead>
+                    <tbody class="flex-1 sm:flex-none text-center">
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-6 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">1</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Масалов Дмитрий Алексеевич</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">1 мая 2001 года</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">1 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">1</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:00:01</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Мерк</td>
+                      </tr>
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">2</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Иванов Генадий Викторович</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 h-12"></td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">2 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">3</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:05:10</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Герасимов</td>
+                      </tr>
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">3</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Дмитриев Степан Александрович</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">11 апреля 2002 года</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">2 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">4</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:10:13</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Иванов</td>
+                      </tr>
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">4</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Степанов Никита Олегович</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">5 август 2002 года</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">3 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">4</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:08:22</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Мерк</td>
+                      </tr>
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">5</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Алексеев Кирилл Никитич</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">1 февряля 2001 года</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">1 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">7</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:15:01</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Сема</td>
+                      </tr>
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Сергеев Вячеслав Андреевич</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 h-12"></td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">3 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">8</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:18:01</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Герасимов</td>
+                      </tr>
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-3 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">7</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Шулепов Алексей Дмитриевич</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">12 января 2003 года</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">3 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:12:01</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Андреев</td>
+                      </tr>
+                      <tr class="flex flex-col flex-no wrap sm:table-row mb-2 sm:mb-0">
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">8</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 truncate">Александров Олег Николаевич</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3 h-12"></td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">1 Взрослый</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">2</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">6:03:51</td>
+                        <td class="border-grey-light border hover:bg-gray-100 p-3">Андреев</td>
+                      </tr>
+                    </tbody>
+                  </table>
+=======
+                            <tbody id="distance">
+                              
+                            </tbody>
                       </table>
                     <!-- </div> -->
+>>>>>>> 294e84a (Add files via upload)
                 </div>
             </div>
         </div>
     <div>
   </div>
 </section>
+<<<<<<< HEAD
+<!-- 2xl:mt-16(большие экраны) sm:mt-8(маленькие экраны) -->
+<section>
+  <div class="container bg-gray-400 w-full min-w-0 max-w-full min-h-0 max-h-60 h-56 sm:h-96 table-main relative bottom-72">
+    <div class="select_container h-60 xl:h-96">
+    <div>
+      <p class="select-text text-white flex bottom-10 top-4 left-10 absolute">Награды</p>
+    </div>
+    <div class="svg flex justify-center absolute left-36 2xl:mt-16 sm:mt-8 xl:flex-no-wrap flex-col xl:grid grid-flow-col">
+=======
 
 <section>
-  <div class="select_container bg-gray-400 w-full min-w-0 max-w-full min-h-0 max-h-60 xl:max-w-32 absolutes">
-    <div class="container h-60">
+  <div class="select_container bg-gray-400 h-60 w-full">
+    <div class="container">
     <div>
       <p class="select-text text-white flex bottom-10 top-4 left-20">Награды</p>
     </div>
     <div class="svg flex justify-center absolute right-64 mt-20">
+>>>>>>> 294e84a (Add files via upload)
     <div class="select_container-svg-1 mr-16 flex justify-start">
       <img class = "w-25 h-25 mr-3" src="./svg/german-design-award.svg" alt="">
       <span class="text-base font-normal text-white mt-5">German Design Awardbr <br>
@@ -131,9 +336,15 @@
 </section> -->
 
 <!-- Line -->
+<<<<<<< HEAD
 <!-- <div class="container_two-line"></div> -->
 
 <!-- <section class="container_two flex justify-center mt-20">
+=======
+<div class="container_two-line"></div>
+
+<section class="container_two flex justify-center mt-20">
+>>>>>>> 294e84a (Add files via upload)
   <div class="container relative flex top-55">
     <div class="container_two-text">
       <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">about us</h5>
@@ -145,6 +356,7 @@
       <img class="ml-7 mt-15" src="./img/Image (1).svg" alt="">
     </div>
   </div>
+<<<<<<< HEAD
 </section> -->
 <!-- Number -->
 <!-- <div class="number_block mt-16 flex justify-center">
@@ -155,15 +367,28 @@
 
 <!-- CT BLOCK -->
 <!-- <section class="container_three flex justify-center mt-64 ml-28">
+=======
+</section>
+<!-- Number -->
+<div class="number_block mt-16 flex justify-center">
+  <span class="text-6xl pr-3">100%</span><span class="text-sm pr-16 pt-2">SATISFITATION <br> CLIENTS</span>
+  <span class="text-6xl pr-3">250</span><span class="text-sm pr-16 pt-2">EMPLOYEES ON <br> WORLDWIDE</span>
+  <span class="text-6xl pr-3">3469</span><span class="text-sm pr-16 pt-2">PROJECTS COMPLETED <br> ON 60 COUNTRIES</span>
+</div>
+
+<!-- CT BLOCK -->
+<section class="container_three flex justify-center mt-64 ml-28">
+>>>>>>> 294e84a (Add files via upload)
   <div class="container relative flex top-55">
     <div class="container_two-text">
       <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">OUR SERVICES</h5>
       <h6 class="text-6xl font-normal">We provide the best solutions for your dream home</h6>
     </div>
+<<<<<<< HEAD
 </section> -->
 
-<div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 max-h-full xl:flex-no-wrap ml-3 flex-col ">  <!--xl:flex-no-wrap flex-col-->
-  <div class="one mb-5 xl:w-72:h-80">
+<div class="flex justify-center pb-5 xl:grid grid-flow-col min-w-0 xl:flex-no-wrap ml-2 flex-col relative bottom-80">  <!--xl:flex-no-wrap flex-col-->
+  <div class="one mb-5">
     <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
     <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Architectural & Interior design</h2>
     <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
@@ -178,12 +403,36 @@
     <img class = "pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="">
     <h2 class="mt-10 ml-6 mr-6 text-4xl font-normal">Construciton Management</h2>
     <p class="text-lg font-normal ml-6 mr-6">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+=======
+</section>
+
+<div class="flex justify-center xl:grid grid-flow-col">  <!--xl:flex-no-wrap flex-col-->
+  <div class="one">
+    <img class = "pl-5 pt-5" src="./svg/Service Icon.svg" alt="">
+    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Architectural & Interior design</h2>
+    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+  </div>
+  <div class="two">
+    <img class = "pl-5 pt-5" src="./svg/Service Icon (1).svg" alt="">
+    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Building Renovation</h2>
+    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+
+  </div>
+  <div class="three">
+    <img class = "pl-5 pt-5" src="./svg/Service Icon (2).svg" alt="">
+    <h2 class="mt-10 ml-10 mr-10 text-4xl font-normal">Construciton Management</h2>
+    <p class="text-lg font-normal ml-10 mr-10">Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.</p>
+>>>>>>> 294e84a (Add files via upload)
 
   </div>
 </div>
 
 <!-- CF BLOCK -->
+<<<<<<< HEAD
 <!-- <section class="container_four flex justify-center mt-64 ml-28">
+=======
+<section class="container_four flex justify-center mt-64 ml-28">
+>>>>>>> 294e84a (Add files via upload)
   <div class="container relative flex top-55">
     <div class="container_two-text mr-24">
       <h5 class="uppercase text-yellow-500 text-sm font-bold ml-16">RECENT WORKS</h5>
@@ -201,21 +450,36 @@
       <h4 class="text-4xl font-normal ">Residence Swimming Pool</h4>
       <span class="text-lg font-light text-neutral-400 mw-72">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Faucibus fringilla dui amet faucibus nam.</span>
     </div>
+<<<<<<< HEAD
 </section> -->
 
 <!-- Line -->
-<div class="container_two-line static"></div>
+<div class="container_two-line sm:static"></div>
 
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer relative">
 
-  <div class="dekstop-container absolute">
-    <div class="container flex justify-between">
-      <div class="dekstop-container-left xl:max-w-sm">
+  <div class="dekstop-container flex bottom-10 justify-between">
+    <div class="container flex flex-col">
+      <div class="dekstop-container-left sm:text-left">
           <h2 class="footer-contaiber-text">Launch your rowing experience with us!</h2>
           <span class="footer-contaiber-text-2 underline color-gold">Send us a hi</span>
         </div>
-        <div class="dekstop-container-right w-15 flex-col">
+        <div class="dekstop-container-right w-15 flex-col text-left sm:text-right">
+=======
+</section>
+
+<!-- FOOTER -->
+<footer class="footer relative top-1000">
+
+  <div class="dekstop-container absolute">
+    <div class="container flex justify-between">
+      <div class="dekstop-container-left">
+          <h2 class="footer-contaiber-text">Launch your rowing experience with us!</h2>
+          <span class="footer-contaiber-text-2 underline color-gold">Send us a hi</span>
+        </div>
+        <div class="dekstop-container-right w-15">
+>>>>>>> 294e84a (Add files via upload)
           <h3 class="text-xl">Russia,Saint-Petersburg</h3>
           <span>Email:</span>
           <p><a href="m3sades@yandex.ru">m3sades@yandex.ru</a></p>
@@ -225,12 +489,21 @@
       </div>
   </div>
 
+<<<<<<< HEAD
+  <div class="container-footer flex xl:flex-col">
+    <div class="dekstop-container1">
+        <span class="dekstop-text BodymdLight text-center sm:text-left">
+          <span>© 2023 Row-Compilition 2000m - 4000m</span>
+        </span>
+        <div class="dekstop-right-section sm:flex right-32 hidden">
+=======
   <div class="container-footer">
     <div class="dekstop-container1">
         <span class="dekstop-text BodymdLight">
           <span>© 2023 Row-Compilition 2000m - 4000m</span>
         </span>
         <div class="dekstop-right-section flex right-32">
+>>>>>>> 294e84a (Add files via upload)
           <div class="dekstop-eyebrow">
             <span class="dekstop-text02 BodysmtrackingWidestSemiBold">
               <span>CONNECT</span>
