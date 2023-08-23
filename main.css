@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* tr{
 border-top: 1px black solid;
 text-align: center;
@@ -12,6 +13,18 @@ text-align: center;
 border-collapse: collapse;
 width: 100%;
 } */
+=======
+tr{
+border-top: 1px black solid;
+text-align: center;
+
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+>>>>>>> 294e84a (Add files via upload)
 
 .table-main{
 margin-top: 130px;
@@ -40,7 +53,11 @@ background-color: gold;
 .header{
 background-color: #999999;
 color: #fff;
+<<<<<<< HEAD
 width: 100vw;
+=======
+width: 100%;
+>>>>>>> 294e84a (Add files via upload)
 height: 110px;
 margin-bottom: 50px;
 position: absolute;
@@ -157,7 +174,11 @@ font-style: italic;
 /* Footer */
 .footer{
 position: relative;
+<<<<<<< HEAD
 top: 300px;
+=======
+top: 500px;
+>>>>>>> 294e84a (Add files via upload)
 }
 .container-footer{
 content: '';
@@ -170,6 +191,7 @@ margin-top: 180px;
 }
 
 
+<<<<<<< HEAD
 .dekstop-container-left {
 width: 50%;
 
@@ -186,10 +208,15 @@ position: relative;
 flex-shrink: 0;
 border-color: transparent;
 text-align: right;
+=======
+.dekstop-container-right {
+width: 15px;
+>>>>>>> 294e84a (Add files via upload)
 }
 
 .dekstop-container{
 position: absolute;
+<<<<<<< HEAD
 width:100%;
 left: 112px;
 top: -120px;
@@ -205,6 +232,15 @@ padding-bottom: 50px;
 }
 
 /* .table::after{
+=======
+width: 1216px;
+left: 112px;
+top: -120px;
+line-height: 2;
+}
+
+.table::after{
+>>>>>>> 294e84a (Add files via upload)
 content: '';
 position: absolute;
 left: 0;        
@@ -212,12 +248,20 @@ width: 100%;
 height: 2px;
 background:#999999; 
 margin-top: 3700px;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> 294e84a (Add files via upload)
 
 .dekstop-container1 {
 top: 50px;
 left: 112px;
+<<<<<<< HEAD
 width: 100%;
+=======
+width: 1500px;
+>>>>>>> 294e84a (Add files via upload)
 display: flex;
 position: absolute;
 align-self: stretch;
@@ -229,14 +273,22 @@ padding-bottom: 50px;
 }
 .dekstop-text {
 color: var(--dl-color-neutral-700);
+<<<<<<< HEAD
 width: 50%;
+=======
+width: 592px;
+>>>>>>> 294e84a (Add files via upload)
 height: auto;
 align-self: auto;
 text-align: left;
 line-height: 24px;
 }
 .dekstop-right-section {
+<<<<<<< HEAD
 width: 50%;
+=======
+width: 592px;
+>>>>>>> 294e84a (Add files via upload)
 display: flex;
 position: relative;
 align-items: center;
@@ -371,9 +423,15 @@ border-radius: 100px;
 .select_container{
 width: 100%;  
 height: 300px;
+<<<<<<< HEAD
 /* position:absolute; */
 left: 0;
 /* top: 850px; */
+=======
+position:absolute;
+left: 0;
+top: 850px;
+>>>>>>> 294e84a (Add files via upload)
 }
 
 /* Table */
@@ -397,6 +455,7 @@ border-top: 1px black solid;
 border-bottom: 1px black solid;
 }
 
+<<<<<<< HEAD
 /* tbody td .gold {
 background: gold;
 } */
@@ -408,6 +467,19 @@ position: relative;
 } */
 
 /* th.sorted[data-order="1"]::after,
+=======
+tbody td .gold {
+background: gold;
+}
+
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+>>>>>>> 294e84a (Add files via upload)
 th.sorted[data-order="-1"]::after {
 right: 8px;
 position: absolute;
@@ -419,9 +491,15 @@ content: "▼"
 
 th.sorted[data-order="1"]::after {
 content: "▲"
+<<<<<<< HEAD
 } */
 
 /* select{
+=======
+}
+
+select{
+>>>>>>> 294e84a (Add files via upload)
 display: block; 
 font-size: 16px; 
 font-family: sans-serif; 
@@ -455,6 +533,7 @@ text-align: center;
 
 table {
 width: 100%;
+<<<<<<< HEAD
 } */
 
 /* Table 2 */
@@ -479,6 +558,10 @@ th:not(:last-child) {
 
 
 
+=======
+}
+
+>>>>>>> 294e84a (Add files via upload)
 a{
 color: black;
 text-decoration: none;
@@ -531,14 +614,22 @@ bottom: 120px;
       transform: translateX(0);
     }
   }
+<<<<<<< HEAD
 /*   
+=======
+  
+>>>>>>> 294e84a (Add files via upload)
   .::before{
     content: '';
     position: absolute;
     height: 2px;
     width: 64px;
     background: white;
+<<<<<<< HEAD
   } */
+=======
+  }
+>>>>>>> 294e84a (Add files via upload)
 
 
   /* Section Container Two */
@@ -560,12 +651,20 @@ bottom: 120px;
   }
   .container_two-line{
     content: '';
+<<<<<<< HEAD
     position: relative;
+=======
+    position: absolute;
+>>>>>>> 294e84a (Add files via upload)
     height: 2px;
     width: 100%;
     left: 0;
     background: #999999;
+<<<<<<< HEAD
     bottom: 100px;
+=======
+    top: 1750px;
+>>>>>>> 294e84a (Add files via upload)
   }
 
   .container_two-img{
@@ -616,4 +715,8 @@ bottom: 120px;
     height: 56px;
     color: white;
     background-color: #996830;
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> 294e84a (Add files via upload)
