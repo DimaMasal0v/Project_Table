@@ -1,0 +1,29 @@
+{
+  "awardsSection": {
+    "title": "Награды",
+    "containerIdGerman": "award-container-1",
+    "imgIdGerman": "award-img-1",
+    "textIdGerman": "award-text-1",
+    "imgSrcGerman": "https://previews.dropbox.com/p/thumb/ACRGVYYrwRMLMNHl78qzc1BqsoxY2t6Fca9-0Vl1xuG08YID2mVIG2ipgDFnXrHS5rDYJaZR09KwIPQwRUuD4MmhxKDzJ0WngSkngP0uvrvWQ7kqfFAKxeRS78PHwGKu8h-UYSJYMkcnc3ZtDhYu7wZ3bD4itRXTsYjqmWhNuMngwCBFSs6YY_MaxcZ0Ly7kYZrIwdZSxELWtz8nLqmvebjegr0gSPxHoNzmN_HqqDfmf1vpl5m3QArvxLuE2tvgx5gGip0WTysqkV-UZJEoWHbSHqFnhKMbH3e2a-ukpVosJkacHseaxjNb9BqqeqRvAL9AEnx6SXbq1jpZqBa1zyVk/p.png",
+    "imgAltGerman": "German Design Award",
+    "textGerman": "German Design Award<br />2021",
+    "containerIdGold": "award-container-2",
+    "imgIdGold": "award-img-2",
+    "textIdGold": "award-text-2",
+    "imgSrcGold": "https://previews.dropbox.com/p/thumb/ACTSCXZop7OXGJN2z44GgEflWKnX0zJIaj-nCYHVGoJJKlVX66sAmNjwmcfTuL0nSrpjX0w89Og_OfXvIOhI3zwN8PTR_6aqRXllA0AYyeezYytVbw9UaRq2hjlINSdKhxUnMRzHkGHTy7-FxOTJIsq4ytzHwwMOIh-dR9Q7zZU7Tc1xy7ppl4J14j7CVp90rv0IKb-Yxo-BWuF2nnzIYmoX93xNtaDAUsTFvfNOwu26grz5EG3lqDpYtGSkFz9loWeKu8MQg1GyRyD-CmcTTxLEyH42t-7hB3K-Rk3n5fwQrc-fL_KyXQFeKOjamDTJwxPJIHV1ZVt-Ub0Ijffn3yxU/p.png",
+    "imgAltGold": "Gold A’ Design Award",
+    "textGold": "Gold A’ Design Award<br />2021",
+    "containerIdDesign": "award-container-3",
+    "imgIdDesign": "award-img-3",
+    "textIdDesign": "award-text-3",
+    "imgSrcDesign": "https://previews.dropbox.com/p/thumb/ACTIaT894t8o7trgoJFzJtM6DlD_jbV-dOtqC8tS3knFAIqkMwXIhZg1o4rqccdau79WT8UIGdum0DKqBkMKK7P17GU0eT_AgoBUygtrEItzcfL4zVescn6kbpWnQT8YV4GfWs0Qg4xynWR4Y9ZZ5fH3ABQ8wcE1pLG_6Hl2TqUuST2vMRh5RI-GNE8TTilSvzJlmFlqRZlCqF0c7HrpdBjEM2yeyCtXUfbxEM1oXpzUvxu-XNMJ0dGfjHAZ8xQyHYlM82tV3v46a5cvvzM3gWhNy2RhQREZ87HbEskFl9yunmc2HULQmpCYooOifMHGzHYdbqiORh6NyQODZlYP6xIG/p.png",
+    "imgAltDesign": "IF Design Award",
+    "textDesign": "IF Design Award<br />2020",
+    "containerIdGood": "award-container-4",
+    "imgIdGood": "award-img-4",
+    "textIdGood": "award-text-4",
+    "imgSrcGood": "https://previews.dropbox.com/p/thumb/ACQ3HZioBSteipPwE-l4SIMzrxjCD6mZz6G3B36CM7VD5kUIVhTIGQEGyJlYb9-l8l49ayUOF6ukfN-Rl4ESP1otXs2qX_H9iC-BAQkrE8PFX4WiPhAZFqre2fb67LA8nW9BnSQb6mjfMuXJyuYgMY8UibO8_ic-4iS5IPqZTfy0YZLtnXpVt4yB7ZiT7ukXBuJNAw-zjqjQRObUjzayjzbm_gyPulWQ17nJ4cPtW7uZZUaAmP0b_nAw8IkjUEs78qL-cOpJgke0DZAWG-03L1lXfaBMf4L0a50fARhZmtDzysp80AFCpsQ_O9bATQAaAV3r1G2xByxdpxIRr-9q7CrU/p.png",
+    "imgAltGood": "Good Design Award",
+    "textGood": "Good Design Award<br />2019"
+  }
+}
